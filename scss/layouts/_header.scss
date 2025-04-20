@@ -1,0 +1,244 @@
+.header {
+  width: 100%;
+  width: 1513px;
+  height: 105px;
+  background-color: #f6f6f6;
+}
+.header-strat {
+  display: flex;
+  margin: 30px 120px;
+}
+
+.logo img {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  border-radius: 7px;
+  margin: 9px 6px 8px 6px;
+}
+.prices {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: 13px;
+}
+
+.prices b {
+  color: #4267b2;
+}
+
+.prices span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  padding-left: 25px;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+  margin-left: 265px;
+  border-radius: 12px;
+  color: #7aa5ff;
+  position: relative;
+  z-index: 1;
+}
+
+.search-bar::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  right: -5px;
+  bottom: +15px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  border-radius: 60px;
+  z-index: -1;
+  background-size: 300% 300%;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 4px;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.search-bar img {
+  margin-left: 18px;
+  transform: translateY(-33px);
+}
+
+.search-bar input {
+  width: 275px;
+  height: 45px;
+  border-radius: 60px;
+  border: 2px solid #ffffff;
+  padding: 15px 192px 13px 41px;
+}
+.language {
+  width: 70px;
+  height: 36px;
+  border-radius: 39px;
+  border: 2px solid #dce6ff;
+  background-color: #dce6ff;
+  margin-top: 5px;
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.language::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  right: -5px;
+  bottom: -4px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  border-radius: 39px;
+  z-index: -1;
+  background-size: 300% 300%;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 4px;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.language button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 12px;
+  border-radius: 39px;
+  border: 2px solid #ffffff;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 9px 7px;
+  margin-left: 1px;
+}
+
+.language p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: #a6a6a6;
+  margin-left: 40px;
+  transform: translateY(-22px);
+}
+
+.language input {
+  display: none;
+}
+
+.language .circle {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 1px;
+  transition: left 0.3s ease;
+}
+
+.language input:checked + .circle {
+  left: 37px;
+}
+
+.language .text-y3,
+.language .text-py {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 12px;
+  color: #000000;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.language .text-y3 {
+  left: 8px;
+}
+
+.language .text-py {
+  right: 8px;
+}
+
+.language input:checked ~ .text-py {
+  color: #a6a6a6;
+}
+
+.language input:not(:checked) ~ .text-y3 {
+  color: #a6a6a6;
+}
+
+.login {
+  width: 89px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #7296ec;
+  background-color: #7296ec;
+  margin-left: 25px;
+
+  &:hover {
+    background-color: #7296ec;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+.login button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  border: 2px solid #7296ec;
+  color: #ffffff;
+  background-color: #7296ec;
+  margin-top: 10px;
+  margin-left: 16px;
+}

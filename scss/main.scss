@@ -90,35 +90,6 @@
   z-index: 1;
 }
 
-.banner::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(
-    45deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet,
-    red
-  );
-  border-radius: 12.5px;
-  z-index: -1;
-  animation: rotate-border 3s linear infinite;
-  background-size: 300% 300%;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  padding: 4px;
-}
-
 @keyframes rotate-border {
   0% {
     background-position: 0% 50%;

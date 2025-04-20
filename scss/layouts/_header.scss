@@ -46,33 +46,6 @@
   z-index: 1;
 }
 
-.search-bar::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -5px;
-  right: -5px;
-  bottom: +15px;
-  background: linear-gradient(
-    45deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet,
-    red
-  );
-  border-radius: 60px;
-  z-index: -1;
-  background-size: 300% 300%;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  padding: 4px;
-}
 
 @keyframes rotate-border {
   0% {
